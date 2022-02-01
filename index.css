@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #333;
+  
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 16px 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 16px 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 400px)) 1fr;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px;
+    border: 1px solid #666;
+    margin: 8px 0;
+  }
+  
+  #top-box {
+    min-height: 450px;
+    color: white;
+    text-align: center;
+  }
+  
+  #top-box .bgi {
+    position: absolute;
+    background-image: url("https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -6;
+    opacity: 0.6;
+  }
+  
+  #top-box h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  #mid {
+    background: white;
+    color: #333;
+    padding-bottom: 35px;
+  }
+  #mid .content-text p {
+    padding-top: 0;
+  }
+  #midbox {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ff000000;
+    padding: 32px 16px 16px;
+  }
+  #midbox ul {
+    list-style: none;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #midbox li {
+    margin-bottom: 16px;
+    background: #fff;
+    color: #333;
+    width: 30%;
+  }
+  .content-wrap,
+  #midbox ul {
+    grid-column: 2/4;
+  }
+  .card-content {
+    padding: 30px;
+  }
+  
+  #belowinfo {
+    background: #fff;
+    color: #333;
+    padding: 32px;
+  }
+  
+  #last .box {
+    padding: 32px;
+    color: #fff;
+  }
+  
+  #last .box:first-child {
+    background: #2690d4;
+  }
+  
+  #footer {
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+  .box,
+  #footer div {
+    grid-column: span 2;
+  }
